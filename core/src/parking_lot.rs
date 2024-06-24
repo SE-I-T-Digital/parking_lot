@@ -13,7 +13,8 @@ use core::{
     ptr,
     sync::atomic::{AtomicPtr, AtomicUsize, Ordering},
 };
-use rand::{rngs::SmallRng, FromEntropy, Rng};
+use rand::{Rng, SeedableRng};
+use rand::rngs::SmallRng;
 use smallvec::SmallVec;
 use std::time::{Duration, Instant};
 
